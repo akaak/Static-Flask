@@ -3,6 +3,7 @@
 Static website generator using Flask, Frozen-Flask and more.
 
 
+```
 .
 ├── LICENSE
 ├── README.md
@@ -22,3 +23,4 @@ Static website generator using Flask, Frozen-Flask and more.
     ├── index.html
     └── page.html
 
+```
