@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block meta_info %}
+	<meta name="description" content="{{ page.description | default("no desc") }}" />
+    <meta name="keywords" content="{{ page.keywords | default("no kw") }}" />
+{% endblock meta_info %}
+
+<!-- top nav bar -->
+{% block topnav %}
+    <div class="topnav">
+	{% for title, name in config.navigation.iteritems() %}
+		{% if page.path == title %}    	
+			{{ name }} | 
+		{% else %}
+			<a href="/{{ title }}"> {{ name }} </a>  | 
+		{% endif %}
+	{% endfor %}
+</div>
+{% endblock topnav %}
+
+
+{% block content %}
+    <h3>{{ page.title }}</h3>
+
+    {{ page.html|safe }}
+{% endblock content %}
+

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    {% block meta_info %}
+    	
+    {% endblock meta_info %}
+
+    <title>My site</title>
+
+	<link rel="stylesheet" href={{ url_for('static', filename='css/site.css') }} />
+	<link rel="stylesheet" href={{ url_for('static', filename='css/bootstrap.min.css') }} />
+
+</head>
+<body>
+    <div class="header">
+        <p><a href="{{ url_for("index") }}">Home</a></p>
+    </div>
+
+{% block topnav %}
+
+{% endblock topnav %}    
+
+{% block content %}
+    <p>Default content to be displayed</p>
+{% endblock content %}
+
+<!-- footer -->
+
+<hr size="2" noshade>
+<div class="footer">
+    <p>Footer Contents</p>
+    <p>Copyright 2015 Flask Site <a href="">Privacy</a></p>
+</div>
+
+</body>
+</html>
