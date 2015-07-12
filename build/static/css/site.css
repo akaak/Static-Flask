@@ -1,0 +1,19 @@
+body {
+	padding: 20px;
+	margin: 5px;
+}
+
+.header {
+    background-color: #EED;
+ }
+
+.topnav {
+    background-color: #EEE;
+    font-family: 'Arial','Helveica';
+ }
+
+.footer {
+    background-color: #DDD;
+}
+
+
